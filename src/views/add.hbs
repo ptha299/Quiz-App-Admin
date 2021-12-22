@@ -1,0 +1,86 @@
+<h1>New question</h1>
+<form method="POST" action="/add" id="frm-create">
+    <div class="form-group">
+        <label for="text">Text</label>
+        <input type="text" name="text" placeholder="Enter the question..." />
+    </div>
+
+    <div class="form-group">
+        <label>Answers: </label>
+        <div class="answer">
+            <input
+                type="text"
+                name="answers"
+                placeholder="Enter the answer..."
+            />
+            <div>
+                <input
+                    name="correctAnswer"
+                    type="radio"
+                    {{! value="correctAnswer" }}
+                    {{!-- id="answer0" --}}
+                    checked
+                />
+                <label>correct</label>
+            </div>
+
+        </div>
+
+        <div class="answer">
+            <input
+                type="text"
+                name="answers"
+                placeholder="Enter the answer..."
+            />
+            <div>
+                <input
+                    name="correctAnswer"
+                    type="radio"
+                    {{! value="0" }}
+                    {{!-- id="answer1" --}}
+                />
+                <label>correct</label>
+            </div>
+        </div>
+
+        <div class="answer">
+            <input
+                type="text"
+                name="answers"
+                placeholder="Enter the answer..."
+            />
+            <div>
+                <input
+                    name="correctAnswer"
+                    type="radio"
+                    {{! value="0" }}
+                    {{!-- id="answer1" --}}
+                />
+                <label>correct</label>
+            </div>
+        </div>
+
+        <div class="answer">
+            <input
+                type="text"
+                name="answers"
+                placeholder="Enter the answer..."
+            />
+            <div>
+                <input
+                    name="correctAnswer"
+                    type="radio"
+                    {{! value="0" }}
+                    {{!-- id="answer1" --}}
+                />
+                <label>correct</label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="actions">
+        <button class="btn btn-blue btn-large"><i class="fas fa-save"></i>
+            Save</button>
+    </div>
+</form>

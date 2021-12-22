@@ -1,0 +1,35 @@
+<h1>All questions</h1>
+
+<div id="search">
+    <input type="text" placeholder="Search..." />
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Question</th>
+            <th>Answer</th>
+            <th width="210">Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        {{#each questions}}
+        <tr>
+            <th scope="row">{{sum @index 1}}</th>
+            <td>{{this.text}}</td>
+            <td>{{this.correctAnswer}}</td>
+            <td>
+                <a href="/edit/{{this._id}}" class="btn btn-blue"><i class="far fa-edit"></i>
+                Edit</a>
+                <a href="/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this question?');" class="btn btn-orange"><i class="far fa-trash-alt"></i>
+                Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+
+    </tbody>
+
+</table>
